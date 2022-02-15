@@ -41,30 +41,29 @@
 </style>
 <body>
 
-<h2>Filter DIV Elements</h2>
+<h2>My Projects</h2>
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+  <button class="btn" onclick="filterSelection('Personal')"> Cars</button>
+  <button class="btn" onclick="filterSelection('Clubs')"> Animals</button>
+  <button class="btn" onclick="filterSelection('Classes')"> Fruits</button>
+  <button class="btn" onclick="filterSelection('Research')"> Colors</button>
 </div>
 
 <div class="container">
-  <div class="filterDiv cars">BMW</div>
-  <div class="filterDiv colors fruits">Orange</div>
-  <div class="filterDiv cars">Volvo</div>
-  <div class="filterDiv colors">Red</div>
-  <div class="filterDiv cars animals">Mustang</div>
-  <div class="filterDiv colors">Blue</div>
-  <div class="filterDiv animals">Cat</div>
-  <div class="filterDiv animals">Dog</div>
-  <div class="filterDiv fruits">Melon</div>
-  <div class="filterDiv fruits animals">Kiwi</div>
-  <div class="filterDiv fruits">Banana</div>
-  <div class="filterDiv fruits">Lemon</div>
-  <div class="filterDiv animals">Cow</div>
+  <div class="filterDiv Personal">Cloud Lamp</div>
+  <div class="filterDiv Personal">3D Design for x</div>
+  <div class="filterDiv Personal">Hackathon Project</div>
+  <div class="filterDiv Clubs">HyperLoop Measuring Setup</div>
+  <div class="filterDiv Clubs">WECE Tech Lights</div>
+  <div class="filterDiv Clubs">WECE robot arm</div>
+  <div class="filterDiv Classes">FPGA Stardew Valley Pacman</div>
+  <div class="filterDiv Classes">Design Your Own OS</div>
+  <div class="filterDiv Classes">Facial Recognition with Deep Learning</div>
+  <div class="filterDiv Classes">Security MPs</div>
+  <div class="filterDiv Research">3D Printed Enclosure for Littlebeats</div>
+  <div class="filterDiv Research">Electronic Design for Littlebeats</div>
 </div>
 
 <script>
@@ -94,7 +93,7 @@ function w3RemoveClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");
